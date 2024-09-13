@@ -1,66 +1,77 @@
-  .{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-  }
-  
-  header, footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px;
-    background-color: #555;
-  }
-  
-  nav a {
-    padding: 10px 20px;
-    background-color: #222;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  nav a:hover {
-    background-color: #444;
-  }
-  
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    gap: 20px;
-  }
-  
-  article, aside, .menu, .content {
-    background-color: #ccc;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  
-  footer {
-    margin-top: 20px;
-  }
-  
-  .menu {
-    flex: 1 1 100%;
-  }
-  
-  .content {
-    flex: 3;
-  }
-  
-  .ad {
-    flex: 1;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: lightgray;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-menu {
+  background-color: darkgray;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav-menu ul {
+  list-style-type: none;
+}
+
+.nav-menu ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: white;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.nav-menu ul li a:hover {
+  background-color: #555;
+}
+
+.articles, .content {
+  flex: 1;
+  padding: 20px;
+}
+
+.article {
+  background-color: gray;
+  padding: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.menu {
+  background-color: darkgray;
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+}
+
+.footer {
+  background-color: darkgray;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}
